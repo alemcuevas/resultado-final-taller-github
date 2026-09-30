@@ -24,10 +24,17 @@
       </nav>
     </header>
 
+    <aside class="promo-bar" aria-label="Promoción vigente">
+      <p>
+        Envío sin costo en compras participantes.
+        <a href="#productos">Explorar productos</a>
+      </p>
+    </aside>
+
     <main id="inicio">
       <section class="hero" aria-labelledby="hero-title">
         <p class="eyebrow">Todo para tu día</p>
-        <h1 id="hero-title">Encuentra algo útil para cada momento</h1>
+        <h1 id="hero-title">Variedad y soluciones para disfrutar cada espacio</h1>
         <p>Explora productos para el hogar, el trabajo y el tiempo libre.</p>
         <a class="button" href="#productos">Ver productos</a>
       </section>
@@ -38,7 +45,60 @@
           <h2 id="products-title">Productos destacados</h2>
         </div>
         <div class="product-grid">
-          <!-- Las tarjetas de producto se generarán con GitHub Copilot durante el taller. -->
+          <article class="product-card">
+            <img src="assets/electronica.svg" alt="Audífonos inalámbricos color azul">
+            <div class="product-card__body">
+              <p class="product-card__category">Electrónica</p>
+              <h3>Audífonos inalámbricos</h3>
+              <p class="product-card__price">$899.00</p>
+              <a class="product-card__action" href="#productos">Ver producto</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/hogar.svg" alt="Lámpara de mesa con pantalla amarilla">
+            <div class="product-card__body">
+              <p class="product-card__category">Hogar</p>
+              <h3>Lámpara de mesa</h3>
+              <p class="product-card__price">$549.00</p>
+              <a class="product-card__action" href="#productos">Ver producto</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/despensa.svg" alt="Bolsa reutilizable de productos de despensa">
+            <div class="product-card__body">
+              <p class="product-card__category">Despensa</p>
+              <h3>Canasta esencial</h3>
+              <p class="product-card__price">$329.00</p>
+              <a class="product-card__action" href="#productos">Ver producto</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/ropa.svg" alt="Playera cómoda color azul">
+            <div class="product-card__body">
+              <p class="product-card__category">Ropa</p>
+              <h3>Playera cómoda</h3>
+              <p class="product-card__price">$299.00</p>
+              <a class="product-card__action" href="#productos">Ver producto</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/juguetes.svg" alt="Bloques de construcción azules y amarillos">
+            <div class="product-card__body">
+              <p class="product-card__category">Juguetes</p>
+              <h3>Bloques creativos</h3>
+              <p class="product-card__price">$449.00</p>
+              <a class="product-card__action" href="#productos">Ver producto</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/electronica.svg" alt="Bocina portátil compacta color azul">
+            <div class="product-card__body">
+              <p class="product-card__category">Electrónica</p>
+              <h3>Bocina portátil</h3>
+              <p class="product-card__price">$749.00</p>
+              <a class="product-card__action" href="#productos">Ver producto</a>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -47,12 +107,92 @@
           <p class="eyebrow">Compra a tu manera</p>
           <h2 id="categories-title">Categorías</h2>
         </div>
-        <p>Esta sección se completará en una rama de trabajo.</p>
+        <ul class="category-grid">
+          <li>
+            <a class="category-card" href="#productos">
+              <span class="category-card__icon" aria-hidden="true">⌁</span>
+              <strong>Electrónica</strong>
+              <span>Conecta tu día con soluciones prácticas.</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#productos">
+              <span class="category-card__icon" aria-hidden="true">⌂</span>
+              <strong>Hogar</strong>
+              <span>Haz más cómodo cada espacio.</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#productos">
+              <span class="category-card__icon" aria-hidden="true">◫</span>
+              <strong>Despensa</strong>
+              <span>Encuentra esenciales para cada semana.</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#productos">
+              <span class="category-card__icon" aria-hidden="true">◇</span>
+              <strong>Ropa</strong>
+              <span>Opciones cómodas para todos los días.</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-card" href="#productos">
+              <span class="category-card__icon" aria-hidden="true">✦</span>
+              <strong>Juguetes</strong>
+              <span>Ideas para aprender y divertirse.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section benefits" aria-labelledby="benefits-title">
+        <div class="section-heading">
+          <p class="eyebrow">Compra con claridad</p>
+          <h2 id="benefits-title">Una experiencia pensada para ti</h2>
+        </div>
+        <div class="benefit-grid">
+          <article>
+            <span aria-hidden="true">✓</span>
+            <h3>Compra sencilla</h3>
+            <p>Encuentra información clara para elegir con confianza.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">＋</span>
+            <h3>Variedad útil</h3>
+            <p>Explora categorías para distintos momentos de tu día.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">◇</span>
+            <h3>Atención clara</h3>
+            <p>Consulta opciones de ayuda en cada paso de tu recorrido.</p>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2026 Contoso Retail. Proyecto ficticio para aprendizaje.</p>
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="#inicio">Contoso Retail</a>
+          <p>Una experiencia ficticia creada para practicar colaboración con GitHub.</p>
+        </div>
+        <nav aria-label="Explorar la tienda">
+          <h2>Explorar</h2>
+          <ul>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Información de ayuda">
+          <h2>Ayuda</h2>
+          <ul>
+            <li><a href="#inicio">Cómo comprar</a></li>
+            <li><a href="#inicio">Preguntas frecuentes</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-legal">&copy; 2026 Contoso Retail. Proyecto ficticio para aprendizaje.</p>
     </footer>
   </body>
 </html>
