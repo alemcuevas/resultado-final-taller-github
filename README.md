@@ -1,4 +1,15 @@
-# Taller práctico: de un cambio local a producción con GitHub
+# Resultado final del taller: Contoso Retail
+
+Este repositorio ejecuta de principio a fin las instrucciones del taller y conserva ejemplos reales de ramas personales, colaboración, conflicto, Pull Requests, validaciones y despliegue.
+
+- **Sitio final:** `https://alemcuevas.github.io/resultado-final-taller-github/`
+- **Plantilla del taller:** `https://github.com/alemcuevas/github-essentials-workshop`
+- **Rama de integración:** `dev`
+- **Rama de producción:** `main`
+
+> Este repositorio es el resultado de referencia. Para impartir o realizar el taller, crea un repositorio nuevo desde la plantilla original.
+
+## Material del taller
 
 Este taller presencial de 4 horas te ayuda a entender qué ocurre cuando GitHub Copilot crea archivos y tú ejecutas acciones como `commit`, `push`, `pull` o `merge`. Trabajarás en un solo sitio de retail ficticio y llevarás un cambio desde tu computadora hasta una integración simulada a producción.
 
