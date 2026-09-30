@@ -124,10 +124,100 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.25rem;
-  min-height: 140px;
-  padding: 1.5rem;
-  border: 2px dashed var(--color-border);
+}
+
+.product-card {
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.product-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.product-card__body {
+  padding: 1.25rem;
+}
+
+.product-card__category {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product-card h3 {
+  margin: 0.35rem 0;
+}
+
+.product-card__price {
+  color: var(--color-primary-dark);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.product-card__action {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  color: var(--color-surface);
+  background: var(--color-primary);
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.product-card__action:hover,
+.product-card__action:focus-visible {
+  background: var(--color-primary-dark);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.category-card {
+  display: flex;
+  min-height: 180px;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.category-card:hover,
+.category-card:focus-visible {
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+}
+
+.category-card__icon {
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+
+.category-card strong {
+  font-size: 1.1rem;
+}
+
+.category-card span:last-child {
+  color: var(--color-muted);
 }
 
 .muted {
