@@ -68,6 +68,23 @@ a {
   color: var(--color-primary);
 }
 
+.promo-bar {
+  padding: 0.65rem 1.25rem;
+  color: var(--color-primary-dark);
+  text-align: center;
+  background: var(--color-accent);
+}
+
+.promo-bar p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.promo-bar a {
+  margin-left: 0.35rem;
+  text-underline-offset: 0.2em;
+}
+
 .hero {
   max-width: var(--max-width);
   padding: 5rem 2rem;
